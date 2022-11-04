@@ -32,6 +32,11 @@ export default defineNuxtConfig({
         }
     },
 
+    image: {
+        domains: ['www.avrasyacity.com'],
+        provider: 'ipx'
+    },
+
     app: {
         head () {
             return this.$nuxtI18nHead({ addSeoAttributes: true });
