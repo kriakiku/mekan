@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "3.0.0-1",
+    "@types/chroma-js": "^2.1.4",
+    "nuxt": "3.0.0-rc.12",
+    "nuxt-icon": "^0.1.7",
+    "sass": "^1.55.0",
+    "sass-loader": "10"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "8.0.0-beta.3",
+    "chroma-js": "^2.4.2",
+    "emoji-regex": "^10.2.1",
+    "lottie-web-vue": "^2.0.6",
+    "lru-cache": "^7.14.1",
+    "node-html-parser": "^6.1.1",
+    "normalize.css": "^8.0.1",
+    "slugify": "^1.6.5",
+    "string-to-color": "^2.2.2",
+    "translate-google": "^1.5.0"
+  }
+}
