@@ -5,7 +5,8 @@
     "resolveJsonModule": true,
     "types": [
       "@nuxt/types",
-      "@nuxtjs/i18n"
+      "@nuxtjs/i18n",
+      "@nuxt/image"
     ],
     "typeRoots": ["./node_modules/@types", "./types"]
   }

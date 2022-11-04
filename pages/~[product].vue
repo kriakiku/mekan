@@ -1,7 +1,7 @@
 <template>
     <NuxtLayout name="default">
         <template #background>
-          <img :src="item.image" :alt="title" />
+          <nuxt-img :src="item.image" :alt="title" />
         </template>
 
         <template #back>

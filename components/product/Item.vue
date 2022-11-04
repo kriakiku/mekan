@@ -1,6 +1,6 @@
 <template>
     <li :class="$style.item" :data-slug="item.$slug">
-        <img 
+        <nuxt-img 
             :class="$style.image"
             :src="item.image"
             :alt="title"

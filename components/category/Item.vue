@@ -1,7 +1,7 @@
 <template>
     <li :class="$style.item" :data-slug="item.$slug">
         <div :class="$style.image">
-            <img 
+            <nuxt-img
                 :src="item.image"
                 :alt="title"
                 width="128"
