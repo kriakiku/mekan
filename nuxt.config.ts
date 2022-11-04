@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
     modules: [
         'nuxt-icon',
-        '@nuxt/image',
+        '@nuxt/image-edge',
     ],
     buildModules: [
         '@nuxtjs/google-fonts',

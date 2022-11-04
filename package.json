@@ -16,7 +16,7 @@
     "sass-loader": "10"
   },
   "dependencies": {
-    "@nuxt/image": "^0.7.1",
+    "@nuxt/image-edge": "^1.0.0-27769790.4b27db3",
     "@nuxtjs/i18n": "8.0.0-beta.3",
     "chroma-js": "^2.4.2",
     "emoji-regex": "^10.2.1",
