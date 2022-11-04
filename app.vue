@@ -22,9 +22,16 @@ nuxtApp.hook("page:finish", () => {
 useHead({
   meta: [
     { "name": "viewport", "content": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover" },
+
     { "name": "apple-touch-fullscreen", "content": "yes" },
     { "name": "apple-mobile-web-app-capable", "content": "yes" },
     { "name": "apple-mobile-web-app-status-bar-style", "content": "white-translucent" },
+
+    { "name": "mobile-web-app-capable", "content": "yes" },
+    { "name": "browsermode", "content": "application" },
+    { "name": "full-screen", "content": "yes" },
+    { "name": "x5-fullscreen", "content": "true" },
+
     { "name": "theme-color", "content": "#fff" },
     { "name": "color-scheme", "content": "light" }
   ],
@@ -33,6 +40,7 @@ useHead({
   ]
 })
 </script>
+
 
 <style module lang="scss">
 .container {
