@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dataset-364920",
+  "private_key_id": "02db6663f9ddc6280d4f1658628f823421756468",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiCkIN6ljycuXs\nY9FzX7QcMInSGrwNqa3MLR2SUwdVEDEprwLSR+lopE8ioHccLzHJp46wen8KpURQ\nRQkU+ThgxW5UQjGiOVFP6Ipdm5wdVfMIjos6de8UqlRvnjuMRiZ38PnSblIpaoaT\nr/55tfS0cX5mLKeYyFEJ4DuuBg9vVi0vaNGnJ669FQenFbMtKno1pJY5MhjPO/77\nQyscGHE13vxwFdTtLi3bioK6vF8jVtwVkI4XQJ48Mr5mUvBsFxP6zaS8ICBGILt0\nWeuSq3A56IMfGT72GkvqejKsvCJ9vlglS/mk94ZxkH8QaDfbZASrYLbTen0/LsrL\nelNcBoOfAgMBAAECggEATEIMnRTlQFCfcTT2vNfU4RFcwxLO3pU0lCrFSHgnsroY\nkPfqmYC7UYJGNdMTyyFQyoi/B8HWaPGnKSmcIRE6nZw8lI3EYwabhEI5X91cRpgM\n9MF0t5IJ7o1MiG0MtDLNZtPzFjvSEeiupfGFDs15eLQS2s34H9hh/wZWv8rdV7UU\nDFW6+ZoAfPCDHtB98GT1ZZ9wL13BxdQab8iTxDUcvvmlkxfF1gsysO4zEtjFqloz\nmDo0lHYaV2fjcPHoy2EVE7fnNHXWKdcPuUpIq+AU2NGA4CmlMelqPTfrnKREKkL7\nVKS55IY63DwB8Rp5Ofs3Z3/T9IH/tLf8civ8RxiWLQKBgQDaPt2PxRPETIOBLIto\nlZHvsNvYh7CSJsILXd9dbsDapjz0UE1TW/hgag5AA2NqoNCkSb7u9JRGGrexHsxX\nligVBBx/3jXroKsu7Kjbsf9DXZyYNQoC5JjqViXt4F9/ksdt339+nC0YsvBH4gRg\nTPUmDCDUat7raludwzuP1Rx4+wKBgQC+Ekx4yEKWVowWkWs606pfKWdxbaTK5MUz\nCJ/nrvyRcXiEh72kRrPsMdHAxHAv97IW23ZYdSJxD3rN29K6m2BehZF3gEAh/5Xd\niZRzkPerDdI2vV3ha8lAbEqqshN2j6cELCiqt5SJRczoHcxtJ/JHpsWToNioWRu6\nFciOcCKmrQKBgQDY503wi1+/4oN4KDtNcAmgfNeidgkI2DhWb6+E/oPxSvKdpgmT\n5X4O5JjRCg0OdlGmVhzLBI0wt3EFOaTBD906NeHVO5W/XumDM3YHEvqtiyYNJ/mR\nMny/uWrs5ehDtC88hboCrVksiPrBlmHfC91BOSCPvL9cnVH8k4JoytcHbQKBgQCc\nkjJQZJcFhLHNfWjZgrcbwN2ngGx5fk47peUjUvBXVyOx+KdthZh8/uUMaEUKHn6j\neZFZeNQwUlIU9fn3IjsWYezchddOql3nqoeRU1/RlocN9Jw7LzEPUqWHSz3hMqCg\nPUgaqTNAiTEsHC/j0z4va9/hpmQS+aRve7ZEL3c72QKBgBTfqRTx5QBw3kHxTptk\n9v+Wd1lsQuqbGU0JN17anc6z6FIG2kogZcwgSSeCnCFiT1AjTC+df+Oerpy+TeIs\nP/7wUIJT2fX+fdoXbiImQ2BGefc08+DrU+L6+B0GG+k6DcH97c/v2ai3hbR4QQR4\neouW7GqHH9GgqOi1Dl++Rt3T\n-----END PRIVATE KEY-----\n",
+  "client_email": "mekan-menu@dataset-364920.iam.gserviceaccount.com",
+  "client_id": "112088790625691072378",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mekan-menu%40dataset-364920.iam.gserviceaccount.com"
+}

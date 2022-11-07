@@ -1,6 +1,7 @@
 import { parse } from 'node-html-parser';
 import chroma from 'chroma-js'
-import translate from 'translate-google'
+// import translate from 'translate-google'
+import { translate } from './translate'
 import LRU from 'lru-cache'
 import { Lang } from '~/types/lang';
 import { slugify } from './slugify';
@@ -73,7 +74,7 @@ export async function parseMenu(): Promise<MenuResponse> {
         },
         price: Number($item.querySelector('.fmp-title .price')?.textContent?.replace('TL', '').trim() || 0),
         description: {
-          [Lang.TR]: String($item.querySelector('.fmp-body')?.textContent || 'n/a').trim(),
+          [Lang.TR]: String($item.querySelector('.fmp-body')?.textContent || '').trim(),
           [Lang.EN]: '',
           [Lang.RU]: '',
           [Lang.UA]: '',
