@@ -6,6 +6,7 @@
             :alt="title"
             width="128"
             height="128"
+            preload
         />
 
         <Flag v-if="item.$emoji" :class="$style.flag">

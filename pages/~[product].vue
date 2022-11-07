@@ -1,7 +1,12 @@
 <template>
     <NuxtLayout name="default">
         <template #background>
-          <nuxt-img :src="item.image" :alt="title" />
+          <nuxt-picture
+            :src="item.image"
+            :alt="title"
+            :width="width"
+            preload
+        />
         </template>
 
         <template #back>
@@ -56,6 +61,8 @@ const subtitle = alternateTranslatable(item.title, item.$slug);
 
 const description = translatable(item.description, item.$slug)
 const alternateDescription = alternateTranslatable(item.description, item.$slug)
+
+const width = computed(() => Math.min(typeof window !== 'undefined' ? window.innerWidth : 512, 512))
 
 useHead({
   title,
