@@ -113,27 +113,30 @@ export async function parseMenu(): Promise<MenuResponse> {
   /**
    * Translate
    */
-  const sectionTitles = sections.map(item => item.title[Lang.TR])
-  const itemsTitles = items.map(item => item.title[Lang.TR])
-  const itemsDescription = items.map(item => item.description[Lang.TR])
+  const sectionTitles: Array<[string, string]> = sections.map((item, key) => [item.title[Lang.TR], key]).filter(([value]) => !!value) as any;
+  const itemsTitles: Array<[string, string]> = items.map((item, key) => [item.title[Lang.TR], key]).filter(([value]) => !!value) as any;
+  const itemsDescription: Array<[string, string]> = items.map((item, key) => [item.description[Lang.TR], key]).filter(([value]) => !!value) as any;
 
   for (const lang of [Lang.EN, Lang.UA, Lang.RU]) {
     const code = lang === Lang.UA ? 'uk' : lang
     const options = {from: 'tr', to: code};
 
-    const $sectionTitles = await translate(sectionTitles, options)
+    const $sectionTitles = await translate(sectionTitles.map(([value]) => value), options)
     for (const [index, value] of Object.entries($sectionTitles)) {
-      sections[index].title[lang] = value
+      const key = sectionTitles[index][1]
+      sections[key].title[lang] = value
     }
 
-    const $itemsTitles = await translate(itemsTitles, options)
+    const $itemsTitles = await translate(itemsTitles.map(([value]) => value), options)
     for (const [index, value] of Object.entries($itemsTitles)) {
-      items[index].title[lang] = value
+      const key = itemsTitles[index][1]
+      items[key].title[lang] = value
     }
 
-    const $itemsDescription = await translate(itemsDescription, options)
+    const $itemsDescription = await translate(itemsDescription.map(([value]) => value), options)
     for (const [index, value] of Object.entries($itemsDescription)) {
-      items[index].description[lang] = value
+      const key = itemsDescription[index][1]
+      items[key].description[lang] = value
     }
   }
 
