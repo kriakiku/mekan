@@ -3,7 +3,7 @@ import key from '../../key.json'
 
 const translationClient = new TranslationServiceClient({
     projectId: key.project_id,
-    credential: key
+    credentials: key
 });
 
 const projectId = 'dataset-364920';
