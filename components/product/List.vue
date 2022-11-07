@@ -1,7 +1,7 @@
 <template>
     <section :class="$style.section">
         <ul :class="$style.list">
-            <ProductItem 
+            <product-item 
                 v-for="item in items"
                 :key="item.$id"
                 :item="item"

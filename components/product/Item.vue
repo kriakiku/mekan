@@ -1,6 +1,6 @@
 <template>
     <li :class="$style.item" :data-slug="item.$slug">
-        <nuxt-img 
+        <nuxt-picture 
             :class="$style.image"
             :src="item.image"
             :alt="title"
@@ -9,9 +9,9 @@
             preload
         />
 
-        <Flag v-if="item.$emoji" :class="$style.flag">
+        <flag v-if="item.$emoji" :class="$style.flag">
             {{item.$emoji}}
-        </Flag>
+        </flag>
 
         <div :class="$style.content">
             <span :class="$style.title">
@@ -20,12 +20,13 @@
             <span :class="$style.subtitle" v-if="subtitle" :lang="subtitle.locale">
                 {{subtitle.value}}
             </span>
-            <Price :class="$style.price" :value="item.price" />
+            <price :class="$style.price" :value="item.price" />
         </div>
 
-        <NuxtLink
+        <nuxt-link
             :class="$style.link"
             :to="localePath({ name: '~product', params: { product: item.$id } })" 
+            prefetch
         />
     </li>
 </template>
@@ -54,7 +55,7 @@ const subtitle = alternateTranslatable(item.title, item.$slug);
     gap: 8px;
 }
 
-.image {
+img.image {
     grid-area: image;
     display: flex;
     min-height: var(--image-size);

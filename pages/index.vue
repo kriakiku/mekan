@@ -1,18 +1,18 @@
 <template>
-    <NuxtLayout name="default">
+    <nuxt-layout name="default">
         <template #background>
             <div :alt="t('home.title')" :class="$style.background" />
-            <PromoAddress :class="$style.address" />
+            <promo-address :class="$style.address" />
         </template>
 
         <h1 :class="$style.title">
           {{t('home.welcome')}}
         </h1>
 
-        <LanguageSwitch />
+        <language-switch />
 
-        <CategoryList />
-    </NuxtLayout>
+        <category-list />
+    </nuxt-layout>
 </template>
 
 <script setup lang="ts">

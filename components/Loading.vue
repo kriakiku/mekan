@@ -1,6 +1,6 @@
 <template>
     <div :class="$style.loading">
-        <Illustration value="loader" loop />
+        <illustration value="loader" loop />
     </div>
 </template>
 

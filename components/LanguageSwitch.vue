@@ -1,9 +1,9 @@
 <template>
-    <NuxtLink to="/language" role="alert" :class="$style.alert">
-        <Language :lang="locale as any" />
+    <nuxt-link to="/language" prefetch role="alert" :class="$style.alert">
+        <language :lang="locale as any" />
         <span :class="$style.info">(click to pick language)</span>
-        <Icon :class="$style.icon" name="right" />
-    </NuxtLink>
+        <icon :class="$style.icon" name="right" />
+    </nuxt-link>
 </template>
 
 <script setup lang="ts">

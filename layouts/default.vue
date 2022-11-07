@@ -10,7 +10,7 @@
             <div :class="$style.headerContent">
                 <!-- Back -->
                 <span :class="$style.action" v-if="$slots.back">
-                    <Icon name="back" size="2em" />
+                    <icon name="back" size="2em" />
                     <slot name="back" />
                 </span>
 
@@ -21,9 +21,9 @@
 
                 <!-- Flag -->
                 <span :class="$style.flag" v-if="$slots.flag">
-                    <Flag>
+                    <flag>
                         <slot name="flag" />
-                    </Flag>
+                    </flag>
                 </span>
             </div>
         </header>
@@ -40,7 +40,7 @@
                             Powered by Jonas
 
                             <a href="https://t.me/kriakiku">
-                                <Icon name="telegram" color="#229ED9" />
+                                <icon name="telegram" color="#229ED9" />
                             </a>
                         </span>
                     </slot>

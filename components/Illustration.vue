@@ -1,6 +1,6 @@
 <template>
     <div :class="$style.illustration" role="img" :aria-label="value">
-        <LottieAnimation 
+        <lottie-animation 
             :animationData="animationData"
             :height="200"
             :width="200"

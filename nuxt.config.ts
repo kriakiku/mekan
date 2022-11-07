@@ -49,7 +49,8 @@ export default defineNuxtConfig({
 
     pwa: {
       workbox: {
-        enabled: true
+        enabled: true,
+        // templatePath: '~/worker.js'
       }
     },
     css: ['normalize.css/normalize.css']

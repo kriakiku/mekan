@@ -1,16 +1,16 @@
 <template>
     <span :lang="lang" :class="$style.language">
         <template v-if="lang === 'ru'">
-            <Icon name="ru" /> Русский
+            <icon name="ru" /> Русский
         </template>
         <template v-else-if="lang === 'ua'">
-            <Icon name="ua" /> Український
+            <icon name="ua" /> Український
         </template>
         <template v-else-if="lang === 'en'">
-            <Icon name="en" /> English
+            <icon name="en" /> English
         </template>
         <template v-else-if="lang === 'tr'">
-            <Icon name="tr" /> Türk
+            <icon name="tr" /> Türk
         </template>
     </span>
 </template>

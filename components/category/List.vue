@@ -2,7 +2,7 @@
     <section :class="$style.section">
         <h2 :class="$style.title">{{t('category.list.title')}}</h2>
         <ul :class="$style.list">
-            <CategoryItem 
+            <category-item 
                 v-for="item in sections"
                 :key="item.$id"
                 :item="item"

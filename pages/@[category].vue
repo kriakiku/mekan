@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="default">
+    <nuxt-layout name="default">
         <template #background>
           <div :class="$style.background" />
         </template>
@@ -9,11 +9,11 @@
         </template>
 
         <template #back>
-          <NuxtLink :to="localePath({ name: 'index' })" />
+          <nuxt-link :to="localePath({ name: 'index' })" prefetch />
         </template>
 
-        <ProductList :items="items" />
-    </NuxtLayout>
+        <product-list :items="items" />
+    </nuxt-layout>
 </template>
 
 <script setup lang="ts">

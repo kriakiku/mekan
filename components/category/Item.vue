@@ -1,7 +1,7 @@
 <template>
     <li :class="$style.item" :data-slug="item.$slug">
         <div :class="$style.image">
-            <nuxt-img
+            <nuxt-picture
                 :src="item.image"
                 :alt="title"
                 width="256"
@@ -12,9 +12,10 @@
         <span :class="$style.title">
             {{title}}
         </span>
-        <NuxtLink
+        <nuxt-link
             :class="$style.link"
             :to="localePath({ name: '@category', params: { category: item.$id } })" 
+            prefetch
         />
     </li>
 </template>
@@ -56,6 +57,11 @@ const title = translatable(item.title, item.$slug);
     background: v-bind(color);
     border-radius: var(--border-radius);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    picture {
+        display: flex;
+        flex: 1;
+    }
 
     img {
         --size: calc(100% - 8px);

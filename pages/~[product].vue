@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="default">
+    <nuxt-layout name="default">
         <template #background>
           <nuxt-picture
             :src="item.image"
@@ -10,7 +10,7 @@
         </template>
 
         <template #back>
-          <NuxtLink :to="localePath({ name: '@category', params: { category: section.$id } })" />
+          <nuxt-link :to="localePath({ name: '@category', params: { category: section.$id } })" prefetch />
         </template>
 
         <template #flag v-if="item.$emoji">
@@ -18,7 +18,7 @@
         </template>
 
         <template #price>
-            <Price :value="item.price" />
+            <price :value="item.price" />
         </template>
 
         <h1 :class="$style.title">{{title}}</h1>
@@ -34,10 +34,10 @@
             <p :class="$style.descriptionParagraph" v-if="alternateDescription?.value !== subtitle?.value" :lang="alternateDescription?.locale">{{ alternateDescription?.value }}</p>
             <template v-if="description === title && alternateDescription?.value === subtitle?.value">
                 <p :class="$style.descriptionParagraph">{{t('product.description.empty')}}</p>
-                <Illustration value="empty-description" size="128px" :loop="false" />
+                <illustration value="empty-description" size="128px" :loop="false" />
             </template>
         </div>
-    </NuxtLayout>
+    </nuxt-layout>
 </template>
 
 <script setup lang="ts">

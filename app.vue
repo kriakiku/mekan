@@ -1,12 +1,12 @@
 <template>
   <div :class="$style.container">
-    <Loading v-if="!isLoaded" />
+    <loading v-if="!isLoaded" />
     <template v-else>
-      <NuxtLoadingIndicator />
+      <nuxt-loading-indicator />
 
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
+      <nuxt-layout>
+        <nuxt-page />
+      </nuxt-layout>
     </template>
   </div>
 </template>

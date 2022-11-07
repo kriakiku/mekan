@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="default">
+    <nuxt-layout name="default">
         <template #background>
             <div :class="$style.background" />
         </template>
@@ -9,19 +9,20 @@
         </template>
 
         <template #back>
-          <NuxtLink :to="localePath({ name: 'index' })" />
+          <nuxt-link :to="localePath({ name: 'index' })" prefetch />
         </template>
 
-        <NuxtLink 
+        <nuxt-link 
             v-for="lang in ['en', 'ru', 'ua', 'tr']"
             :key="lang"
             :class="$style.link"
             :to="localePath({ name: 'index' }, lang)"
+            prefetch
         >
-            <Language :lang="lang as any" />
-            <Icon :class="$style.icon" name="right" />
-        </NuxtLink>
-    </NuxtLayout>
+            <language :lang="lang as any" />
+            <icon :class="$style.icon" name="right" />
+        </nuxt-link>
+    </nuxt-layout>
 </template>
 
 <script setup lang="ts">
