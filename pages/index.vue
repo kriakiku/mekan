@@ -9,6 +9,8 @@
           {{t('home.welcome')}}
         </h1>
 
+        <LanguageSwitch />
+
         <CategoryList />
     </NuxtLayout>
 </template>

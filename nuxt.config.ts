@@ -6,11 +6,14 @@ export default defineNuxtConfig({
     modules: [
         'nuxt-icon',
         '@nuxt/image-edge',
+        '@kevinmarrec/nuxt-pwa',
     ],
+
     buildModules: [
         '@nuxtjs/google-fonts',
         '@nuxtjs/i18n',
     ],
+
     googleFonts: {
         families: {
             Nunito: {
@@ -18,6 +21,7 @@ export default defineNuxtConfig({
             },
         }
     },
+
     i18n: {
         locales: [
             { code: 'tr', iso: 'tr-TR' },
@@ -43,6 +47,11 @@ export default defineNuxtConfig({
         },
     },
 
+    pwa: {
+      workbox: {
+        enabled: true
+      }
+    },
     css: ['normalize.css/normalize.css']
 
 })

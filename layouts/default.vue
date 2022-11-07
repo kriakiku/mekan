@@ -38,6 +38,10 @@
                     <slot name="price">
                         <span style="font-weight: 100; font-size: 16px;">
                             Powered by Jonas
+
+                            <a href="https://t.me/kriakiku">
+                                <Icon name="telegram" color="#229ED9" />
+                            </a>
                         </span>
                     </slot>
                 </span>

@@ -4,8 +4,8 @@
             <nuxt-img
                 :src="item.image"
                 :alt="title"
-                width="128"
-                height="128"
+                width="256"
+                height="256"
                 preload
             />
         </div>
