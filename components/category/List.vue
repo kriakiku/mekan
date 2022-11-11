@@ -12,8 +12,8 @@
 </template>
 
 <script setup lang="ts">
-const { sections } = await useMenu();
-const {t} = useI18n();
+const { sections } = await useMenu()
+const {t} = useI18n()
 
 // const props = defineProps<{
 //     items: Section[]

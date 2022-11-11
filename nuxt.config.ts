@@ -51,6 +51,22 @@ export default defineNuxtConfig({
       workbox: {
         enabled: true,
         // templatePath: '~/worker.js'
+      },
+      manifest: {
+          name: 'Mekan restaurant menu',
+          short_name: 'Mekan',
+          description: 'Mekan restaurant menu',          
+      },
+      meta: {
+        name: 'Mekan',
+        author: 'Jonas Otter',
+        description: 'Mekan restaurant menu',
+        favicon: true,
+        mobileApp: true,
+        mobileAppIOS: true,
+        appleStatusBarStyle: true,
+        theme_color: '#fff',
+        lang: 'en',
       }
     },
     css: ['normalize.css/normalize.css']

@@ -32,11 +32,11 @@
             <slot />
         </div>
 
-        <footer :class="$style.footer">
+        <footer :class="{ [$style.footer]: true, [$style.footerStatic]: !$slots.price }">
             <div :class="$style.footerContent">
                 <span :class="$style.footerValue">
                     <slot name="price">
-                        <span style="font-weight: 100; font-size: 16px;">
+                        <span style="font-weight: 100; font-size: 16px;" v-if="false">
                             Powered by Jonas
 
                             <a href="https://t.me/kriakiku">
@@ -51,7 +51,17 @@
 </template>
 
 <script setup lang="ts">
-    const route = useRoute()
+const route = useRoute()
+const { items } = await useMenu();
+
+useHead({
+    meta: () => {
+        return items.map(item => ({
+            rel: 'prefetch',
+            href: item.image
+        }))
+    }
+})
 </script>
 
 <style module lang="scss">
@@ -78,6 +88,8 @@
     img {
         min-width: 100%;
         max-width: 100%;
+        max-height: 50vh;
+        object-fit: cover;
     }
 }
 
@@ -154,12 +166,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 56px;
+    height: 100%;
+    max-height: 56px;
     padding-bottom: env(safe-area-inset-bottom);
     background: linear-gradient(45deg, var(--left-color) 20%, var(--right-color) 80%);
     color: var(--text-color);
     font-size: 20px;
     font-weight: bold;
+
+    transition: max-height 250ms ease;
 
     &::before {
         content: "";
@@ -186,6 +201,10 @@
         border-radius: 0 0 24px 0;
         box-shadow: 8px 10px 0px 8px var(--right-color);
     }
+}
+
+.footerStatic {
+    max-height: 14px;
 }
 
 .footerContent {

@@ -19,8 +19,8 @@
 <script setup lang="ts">
 const {t} = useI18n()
 const localePath = useLocalePath()
-const {getSection} = await useMenu();
-const route = useRoute();
+const {getSection} = await useMenu()
+const route = useRoute()
 
 const {section, items} = getSection(String(route.params.category))
 

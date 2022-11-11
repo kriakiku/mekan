@@ -1,12 +1,13 @@
 <template>
     <li :class="$style.item" :data-slug="item.$slug">
-        <nuxt-picture 
+        <img
             :class="$style.image"
             :src="item.image"
             :alt="title"
             width="256"
             height="256"
             preload
+            :data-id="item.$id"
         />
 
         <flag v-if="item.$emoji" :class="$style.flag">
@@ -71,6 +72,11 @@ img.image {
     object-fit: cover;
     object-position: center;
     pointer-events: none;
+
+    &[data-id^="m:13:"] {
+        object-fit: contain;
+        background: #fff;
+    }
 }
 
 .flag {

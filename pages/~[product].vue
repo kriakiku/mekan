@@ -1,7 +1,7 @@
 <template>
     <nuxt-layout name="default">
         <template #background>
-          <nuxt-picture
+          <img
             :src="item.image"
             :alt="title"
             :width="width"
@@ -43,7 +43,7 @@
 <script setup lang="ts">
 const {t} = useI18n()
 const localePath = useLocalePath()
-const {getItem} = await useMenu();
+const {getItem} = await useMenu()
 const route = useRoute();
 
 const {item, section} = getItem(String(route.params.product))

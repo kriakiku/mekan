@@ -1,5 +1,19 @@
 export const useMenu = async () => {
-    const { data } = await useFetch('/api/menu', { server: false })
+    const $img = useImage();
+
+    const { data } = await useFetch('/api/menu', {
+        server: false,
+        transform: input => {
+            for (const key of ['items', 'sections']) {
+                for (const item of input[key]) {
+                    item.image = $img(item.image, { width: 512 })
+                }
+            }
+
+            return input;
+        }
+    })
+
     const isLoaded = computed(() => {
         return data.value && data.value.items.length > 0
     });

@@ -5,7 +5,7 @@ import { translate } from './translate'
 import LRU from 'lru-cache'
 import { Lang } from '~/types/lang';
 import { slugify } from './slugify';
-import emojiRegex from 'emoji-regex'
+import emojiRegex from 'emoji-regex';
 
 const cache = new LRU<'menu', Promise<MenuResponse>>({
   ttl: 1000 * 60 * 60,
@@ -60,7 +60,6 @@ export async function parseMenu(): Promise<MenuResponse> {
     for (const [itemIndex, $item] of Object.entries($items)) {
       const origTitle = String($item.querySelector('.fmp-title h3')?.textContent || '');
       const title = origTitle.replace(emojiRegex(), '').trim();
-
       const item: Item = {
         $id: `m:${sectionIndex}:${itemIndex}`,
         $slug: slugify(title),
