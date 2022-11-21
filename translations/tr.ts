@@ -1,6 +1,6 @@
 export default {
     home: {
-        title: 'Restoran menüsü / Mekan / Avrasya City',
+        title: 'Restoran menüsü / Mekkan / Avrasya City',
         welcome: 'Burada lezzetli bir şeyler bulabilirsiniz 🌯'
     },
     address: {

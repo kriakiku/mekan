@@ -50,17 +50,17 @@ export default defineNuxtConfig({
     pwa: {
       workbox: {
         enabled: true,
-        // templatePath: '~/worker.js'
+        templatePath: '~/worker.js'
       },
       manifest: {
-          name: 'Mekan restaurant menu',
-          short_name: 'Mekan',
-          description: 'Mekan restaurant menu',          
+          name: 'Mekkan Menu',
+          short_name: 'Mekkan',
+          description: 'Mekkan Cafe & Restaurant',          
       },
       meta: {
-        name: 'Mekan',
+        name: 'Mekkan',
         author: 'Jonas Otter',
-        description: 'Mekan restaurant menu',
+        description: 'Mekkan Cafe & Restaurant',
         favicon: true,
         mobileApp: true,
         mobileAppIOS: true,

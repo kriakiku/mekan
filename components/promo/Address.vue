@@ -2,8 +2,8 @@
     <address :class="$style.address">
         <icon name="location" size="2em" :class="$style.icon" />
         <span :class="$style.title">{{t('address.title')}}</span>
-        <span :class="$style.value" aria-label="Mekan, Avrasya City, Girne, KKTC">
-            Meжan, Avrasya city, Girne
+        <span :class="$style.value" aria-label="Mekkan, Avrasya City, Girne, KKTC">
+            Mekkan, Avrasya city, Girne
         </span>
     </address>
 </template>
